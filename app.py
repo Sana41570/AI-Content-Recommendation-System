@@ -80,6 +80,7 @@ if st.button("Get Recommendations"):
 
         for col, movie in zip(cols, recs.index):
             with col:
+               
                 st.image(movie_posters[movie], width=150)
                 st.caption(movie)
     else:
