@@ -1,0 +1,1 @@
+st.image("posters/movie1.jpg")
