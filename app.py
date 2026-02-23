@@ -75,15 +75,14 @@ if st.button("Get Recommendations"):
     recs = recommend_movies(user_id)
 
     if len(recs) > 0:
-        st.subheader("🎥 Recommended Movies For You")
+        st.subhader("🎥 Recommended Movies For You")
         cols = st.columns(len(recs))
 
-        for col, movie in zip(cols, recs.index):
+        for col,movie in zip(cols, recs.index):
             with col:
                
-                st.image(movie_posters[movie], width=150)
+               # st.image("posters/avengers.jpg", width=150)
                 st.caption(movie)
     else:
         st.write("No new recommendations available.")
     
-
