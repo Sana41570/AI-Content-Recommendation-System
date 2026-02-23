@@ -75,7 +75,7 @@ if st.button("Get Recommendations"):
     recs = recommend_movies(user_id)
 
     if len(recs) > 0:
-        st.subhader("🎥 Recommended Movies For You")
+        st.subheader("🎥 Recommended Movies For You")
         cols = st.columns(len(recs))
 
         for col,movie in zip(cols, recs.index):
